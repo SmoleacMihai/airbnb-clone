@@ -8,12 +8,8 @@ const App = () => {
 
   const cardElements = data.map((object) => {
     return <Card 
-      img = {object.coverImg}
-      rating = {object.stats.rating}
-      reviewCount = {object.stats.reviewCount}
-      country = {object.stats.location}
-      title = {object.title}
-      price = {object.price}
+      key = {object.id}
+      {...object}
     />
   })
   return (
