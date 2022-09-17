@@ -20,7 +20,9 @@ const App = () => {
     <>
       <Navbar/>
       <Hero/>
-      {cardElements}
+      <div className='cards-list'>
+        {cardElements}
+      </div>
     </>
   );
 }
